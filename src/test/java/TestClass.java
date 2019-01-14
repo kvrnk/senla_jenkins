@@ -22,7 +22,7 @@ public class TestClass {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "D:\\Projects\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/home/user/Programs/chromedriver");
         pageObject = PageFactory.initElements(new ChromeDriver(), PageObject.class);
         baseUrl = "http://www.google.com";
         pageObject.open(baseUrl);
